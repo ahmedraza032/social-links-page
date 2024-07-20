@@ -27,8 +27,10 @@ p {
 main {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 25px;
 }
 
 section {
@@ -84,16 +86,25 @@ section {
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.15s;
+  font-weight: 700;
+  font-size: 0.9em;
+  color: var(--white);
 }
 
 .link:hover {
-  background-color: var(--grey-900);
+  background-color: var(--green);
 }
 
-.link > a {
-  text-decoration: none;
+.link:hover {
+  color: var(--grey-900);
+}
+
+.attribution {
   color: var(--white);
-  font-size: 0.9em;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
 }
 
+.attribution  a {
+  text-decoration: none;
+}
